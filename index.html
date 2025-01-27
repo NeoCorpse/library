@@ -32,27 +32,31 @@
         <form action="#">
           <div>
             <label for="title">Title</label
-            ><input id="title" name="title" type="text" />
+            ><input id="title" name="title" type="text" required/>
           </div>
           <div>
             <label for="author">Author</label
-            ><input id="author" name="author" type="text" />
+            ><input id="author" name="author" type="text" required/>
           </div>
           <div>
             <label for="pages">Pages</label
-            ><input id="pages" name="author" type="number" />
+            ><input id="pages" name="author" type="number" required/>
           </div>
           <div>
             <label for="language">Language</label
-            ><input id="language" name="language" type="text" />
+            ><input id="language" name="language" type="text" required/>
           </div>
           <div>
-            <label for="published">Year Published</label
-            ><input id="published" name="published" type="number" />
+            <label for="year">Year Published</label
+            ><input id="year" name="year" type="number" required/>
+          </div>
+          <div>
+            <label for="hasRead">Have you read the book</label>
+            <input type="checkbox" id="hasRead" name="hasRead" />
           </div>
           <div class="buttons">
             <button type="reset">Clear</button>
-            <button class="add">Add</button>
+            <button type="submit" class="add">Add</button>
           </div>
         </form>
       </div>
@@ -60,37 +64,26 @@
       <div class="container">
         <h2>Your Books</h2>
         <div class="cards">
-          <div class="card">
-            <h3 class="title">Nevernight</h3>
-            <!-- <img src="./images/book.jpg" alt="" /> -->
-            <p class="author">Author: Jay Kristoff</p>
-            <p class="pages">Pages: 544</p>
-            <p class="language">Language: English</p>
-            <p class="published">Published: 2016</p>
-          </div>
-          <div class="card">
-            <h3 class="title">Godsgrave</h3>
-            <p class="author">Author: Jay Kristoff</p>
-            <p class="pages">Pages: 234</p>
-            <p class="language">Language: English</p>
-            <p class="published">Published: 2018</p>
-          </div>
-          <div class="card">
-            <h3 class="title">Dark Dawn</h3>
-            <p class="author">Author: Jay Kristoff</p>
-            <p class="pages">Pages: 233</p>
-            <p class="language">Language: English</p>
-            <p class="published">Published: 2020</p>
+          <!-- <div class="card">
+            <h3 class="title"></h3>
+            <div class="buttons">
+                <img src="./images/view.svg" class="view" alt="">
+                <img src="./images/delete.svg" class="delete" alt="">
+            </div>
+            <p class="author">Author:</p>
+            <p class="pages">Pages:</p>
+            <p class="language">Language:</p>
+            <p class="year">Year Published:</p>
+          </div> -->
+          
           </div>
         </div>
       </div>
       <div class="log">
         <div>
-          Books: <span class="books"></span>
-          <ul>
-            <li>Read: <span class="read"></span></li>
-            <li>Unread: <span class="unread"></span></li>
-          </ul>
+          <div>Books: <span class="books"></span></div>
+          <div>Read: <span class="read"></span></div>
+          <div>Unread: <span class="unread"></span></div>
         </div>
       </div>
     </main>
