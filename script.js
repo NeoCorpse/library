@@ -26,6 +26,7 @@ const cards = document.querySelector(".cards");
 const books = document.querySelector(".books");
 const read = document.querySelector(".read");
 const unread = document.querySelector(".unread");
+const form = document.querySelector("form");
 
 addButton.addEventListener("click", function (e) {
   e.preventDefault();
