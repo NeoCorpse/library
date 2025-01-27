@@ -28,7 +28,7 @@
     </header>
     <main>
       <div class="sidebar">
-        <h1>New Book</h1>
+        <h2>New Book</h2>
         <form action="#">
           <div>
             <label for="title">Title</label
@@ -43,25 +43,45 @@
             ><input id="pages" name="author" type="number" />
           </div>
           <div>
-            <label for="language">Pages</label
+            <label for="language">Language</label
             ><input id="language" name="language" type="text" />
           </div>
           <div>
-            <label for="published">Pages</label
-            ><input id="published" name="published" type="date" />
+            <label for="published">Year Published</label
+            ><input id="published" name="published" type="number" />
           </div>
-          <button type="reset">Clear</button>
-          <button>Add</button>
+          <div class="buttons">
+            <button type="reset">Clear</button>
+            <button class="add">Add</button>
+          </div>
         </form>
       </div>
 
-      <div class="cards">
-        <div class="card">
-          <h2 class="title"></h2>
-          <p class="author">Author:</p>
-          <p class="pages">Pages:</p>
-          <p class="language">Language:</p>
-          <p class="published">Published:</p>
+      <div class="container">
+        <h2>Your Books</h2>
+        <div class="cards">
+          <div class="card">
+            <h3 class="title">Nevernight</h3>
+            <!-- <img src="./images/book.jpg" alt="" /> -->
+            <p class="author">Author: Jay Kristoff</p>
+            <p class="pages">Pages: 544</p>
+            <p class="language">Language: English</p>
+            <p class="published">Published: 2016</p>
+          </div>
+          <div class="card">
+            <h3 class="title">Godsgrave</h3>
+            <p class="author">Author: Jay Kristoff</p>
+            <p class="pages">Pages: 234</p>
+            <p class="language">Language: English</p>
+            <p class="published">Published: 2018</p>
+          </div>
+          <div class="card">
+            <h3 class="title">Dark Dawn</h3>
+            <p class="author">Author: Jay Kristoff</p>
+            <p class="pages">Pages: 233</p>
+            <p class="language">Language: English</p>
+            <p class="published">Published: 2020</p>
+          </div>
         </div>
       </div>
       <div class="log">
