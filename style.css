@@ -6,6 +6,7 @@
   --medium-brown: #a0522d;
   --light-brown: #d9bba0;
   --beige: #e4cfcf;
+  --white: #f7f0f0;
 }
 html {
   font-size: 62.5%;
@@ -14,4 +15,91 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Raleway, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+header {
+  background-color: var(--light-brown);
+  padding: 1.2rem 3rem;
+  margin: 1.4rem 0.8rem;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div:nth-child(2) {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+header > div:nth-child(2) > div:last-child {
+  display: flex;
+  gap: 0.5rem;
+}
+header div.divider {
+  width: 1px;
+  height: 65%;
+  background-color: var(--dark);
+}
+
+input[type="search"] {
+  border-radius: 1.6rem;
+  background-image: url("./images/search.svg");
+  background-size: 2rem;
+  background-position: 0.7rem 0.7rem;
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  width: 3.3rem;
+  min-height: 3.3rem;
+  height: auto;
+  border: none;
+  transition: width 0.5s ease-in-out, height 0.5s ease-out;
+}
+
+.profile-picture {
+  width: 3.6rem;
+  border-radius: 50%;
+}
+input[type="search"]:hover,
+input[type="search"]:focus {
+  width: 40rem;
+  background-position: 0.7rem 0.7rem;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  padding-left: 3.7rem;
+}
+
+input[type="search"]:focus {
+  outline: 2px solid var(--dark);
+  padding-left: 3.7rem;
+}
+
+img[alt="notification"] {
+  width: 2.4rem;
+}
+
+img[alt="drop-down"] {
+  width: 1.5rem;
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 3em;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
