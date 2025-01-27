@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./custom-reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+        Library.io
+      </div>
+      <div>
+        <input type="search" />
+        <div class="divider"></div>
+        <img src="" alt="notification" />
+        <div class="divider"></div>
+        <img src="" class="profile-picture" alt="" />
+        <div>NeoCorpse</div>
+        <img src="" alt="drop-down" />
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <h1>New Book</h1>
+        <form action="#">
+          <div>
+            <label for="title">Title</label
+            ><input id="title" name="title" type="text" />
+          </div>
+          <div>
+            <label for="author">Author</label
+            ><input id="author" name="author" type="text" />
+          </div>
+          <div>
+            <label for="pages">Pages</label
+            ><input id="pages" name="author" type="number" />
+          </div>
+          <div>
+            <label for="language">Pages</label
+            ><input id="language" name="language" type="text" />
+          </div>
+          <div>
+            <label for="published">Pages</label
+            ><input id="published" name="published" type="date" />
+          </div>
+          <button type="reset">Clear</button>
+          <button>Add</button>
+        </form>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h2 class="title"></h2>
+          <p class="author">Author:</p>
+          <p class="pages">Pages:</p>
+          <p class="language">Language:</p>
+          <p class="published">Published:</p>
+        </div>
+      </div>
+      <div class="log">
+        <div>
+          Books: <span class="books"></span>
+          <ul>
+            <li>Read: <span class="read"></span></li>
+            <li>Unread: <span class="unread"></span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Made by <a href="https://github.com/NeoCorpse/library">Neo</a> for
+      <a href="https://www.theodinproject.com/">The Odin Project</a>
+    </footer>
+  </body>
+</html>
