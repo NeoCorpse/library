@@ -42,18 +42,20 @@ addButton.addEventListener("click", function (e) {
   populate();
 });
 
-function Book(title, author, year, language, pages, hasRead) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
-  this.language = language;
-  this.pages = pages;
-  this.hasRead = hasRead;
-}
+class Book {
+  constructor(title, author, year, language, pages, hasRead) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.language = language;
+    this.pages = pages;
+    this.hasRead = hasRead;
+  }
 
-Book.prototype.changeStatus = function () {
-  this.hasRead = !this.hasRead;
-};
+  changeStatus() {
+    this.hasRead = !this.hasRead
+  }
+}
 
 // Adds cards to the viewport, including the buttons
 function populate() {
